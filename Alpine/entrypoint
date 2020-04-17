@@ -13,7 +13,7 @@ echo "Starting keybase as a background service..."
 nohup kbfsfuse >> /var/log/keybase/kbfsfuse.log 2>&1 &
 nohup redirector /keybase >> /var/log/keybase/redirector.log 2>&1 &
 nohup keybase service --auto-forked >> /var/log/keybase/keybase.log 2>&1 &
-sleep 3
+sleep 5
 echo "Connecting to keybase server..."
 
 # Check if there is a file to use as username, else use env variable.
